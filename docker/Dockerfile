@@ -2,7 +2,7 @@ FROM fedora:31
 COPY 68k-diskdefs /tmp
 RUN \
   dnf update -y && \ 
-  dnf install -y wget xz gcc gcc-c++ gmp-devel mpfr-devel libmpc-devel make file texinfo srecord git libdsk java-11-openjdk unzip zip man vim-common && \
+  dnf install -y wget xz gcc gcc-c++ gmp-devel mpfr-devel libmpc-devel make file texinfo srecord git libdsk java-11-openjdk unzip zip man vim-common diffutils && \
   dnf clean all && \
   mkdir /opt/cpmtools && \
   cd /opt/cpmtools && \
