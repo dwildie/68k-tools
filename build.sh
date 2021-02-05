@@ -1,2 +1,2 @@
 cd docker
-docker build -t 68k-tools .
+docker build --network=host -t 68k-tools:0.0.2 .
